@@ -74,16 +74,16 @@ def predict_BreastCancer():
     if Method == 'soft':
         if prediction2[0] > 0.5:
             # put_text("WDBC-Benign {}".format(soft_prob[0]))
-            put_text(f"Benign with {soft_prob[0] * 100}% confidence")
+            put_text(f"Benign with {round(soft_prob[0] * 100,2)}% confidence")
         else:
             # put_text("WDBC-Malignant w{}".format(soft_prob[0]))
-            put_text(f"Malignant with {soft_prob[0] * 100}% confidence")
+            put_text(f"Malignant with {round(soft_prob[0] * 100,2)}% confidence")
 
     if Method == 'hard':
         if prediction1[0] > 0.5:
-            put_text(f"Benign with {hard_prob[0] * 100}% confidence")
+            put_text(f"Benign with {round(hard_prob[0] * 100,2)}% confidence")
         else:
-            put_text(f"Malignant with {hard_prob[0] * 100}% confidence")
+            put_text(f"Malignant with {round(hard_prob[0] * 100,2)}% confidence")
 
 
 app.add_url_rule('/tool', 'webio_view', webio_view(predict_BreastCancer),
