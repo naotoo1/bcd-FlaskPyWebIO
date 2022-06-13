@@ -8,8 +8,10 @@ To diagnose breast cancer disease and return the confidence of the diagnosis,
 3. Enter the value for Radius_texture and and click on ```submit ``` to proceed or ```reset``` to enter new value
 4. Select the method to proceed and  click on ```submit```
 
-
 ### FastAPI framework Version
 For fastapi framework deployment version refer to [bcd-fastapi](https://github.com/naotoo1/bcd-fastapi)
+
+### FlaskFlasgger and Streamlit framework Version
+For Flask framework with Flasgger as well as Streamlit version: [bcd-flaskflasgger](https://github.com/naotoo1/bcd-flaskflasgger)
 
 
